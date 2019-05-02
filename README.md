@@ -1,2 +1,2 @@
 # kafkaprotobuff
-A simple of Kafka Client consuming Protobuff messages
+A simple example of Kafka Client consuming Protobuff messages
