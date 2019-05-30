@@ -18,8 +18,12 @@ public class KafkaClient {
         props.setProperty("group.id", "test");
         props.setProperty("enable.auto.commit", "true");
         props.setProperty("auto.commit.interval.ms", "1000");
+
         props.setProperty("key.deserializer", StringDeserializer.class.getName());
-        props.setProperty("value.deserializer", AddressBookSerDe.class.getName());
+
+        // props.setProperty("value.deserializer", AddressBookSerDe.class.getName());
+        // if expected package is compressed - user compressing variant
+        props.setProperty("value.deserializer", AddressBookCompressedSerDe.class.getName());
 
         KafkaConsumer<String, AddressBookProtos.AddressBook> consumer = new KafkaConsumer<>(props);
         consumer.subscribe(Collections.singletonList("s1-kafka-topic"));
