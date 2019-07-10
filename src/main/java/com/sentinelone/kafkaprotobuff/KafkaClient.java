@@ -26,7 +26,7 @@ public class KafkaClient {
         props.setProperty("value.deserializer", AddressBookCompressedSerDe.class.getName());
 
         KafkaConsumer<String, AddressBookProtos.AddressBook> consumer = new KafkaConsumer<>(props);
-        consumer.subscribe(Collections.singletonList("s1-kafka-topic"));
+        consumer.subscribe(Collections.singletonList("your-kafka-topic"));
         while (true) {
             ConsumerRecords<String, AddressBookProtos.AddressBook> records = consumer.poll(Duration.ofMillis(100));
             for (ConsumerRecord<String, AddressBookProtos.AddressBook> addressBookRecord : records) {
