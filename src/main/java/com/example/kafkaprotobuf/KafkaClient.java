@@ -1,4 +1,4 @@
-package com.sentinelone.kafkaprotobuff;
+package com.example.kafkaprotobuf;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;

@@ -1,4 +1,4 @@
-package com.sentinelone.kafkaprotobuff;
+package com.example.kafkaprotobuf;
 
 import org.apache.kafka.clients.CommonClientConfigs;
 import org.apache.kafka.clients.consumer.ConsumerConfig;

@@ -1,4 +1,4 @@
-package com.sentinelone.kafkaprotobuff;
+package com.example.kafkaprotobuf;
 
 import org.apache.kafka.common.errors.SerializationException;
 import org.apache.kafka.common.serialization.Deserializer;

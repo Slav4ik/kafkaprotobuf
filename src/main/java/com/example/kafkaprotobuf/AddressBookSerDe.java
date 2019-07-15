@@ -1,4 +1,4 @@
-package com.sentinelone.kafkaprotobuff;
+package com.example.kafkaprotobuf;
 
 import com.google.protobuf.InvalidProtocolBufferException;
 import org.apache.kafka.common.errors.SerializationException;
