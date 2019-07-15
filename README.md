@@ -1,5 +1,5 @@
-# kafkaprotobuff
-A simple example of Kafka Client consuming Protobuff messages.
+# kafkaprotobuf
+A simple example of Kafka Client consuming Protobuf messages.
 
 Run `mvn clean compile` to generate java classes for the protobuf schemas.
 
