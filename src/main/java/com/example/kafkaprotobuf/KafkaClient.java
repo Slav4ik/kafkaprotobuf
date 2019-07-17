@@ -12,6 +12,11 @@ import java.util.Properties;
 
 public class KafkaClient {
 
+    /**
+     * Example program how to configure your kafka client
+     *
+     * @param args - ignore
+     */
     public static void main(String[] args) {
         Properties props = new Properties();
         props.setProperty("bootstrap.servers", "localhost:9092");
